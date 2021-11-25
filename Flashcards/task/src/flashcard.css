@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    flex: 1 1 30%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.card {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffefdf;
+    margin: 5px;
+    transition: all 1s ease-out;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    background-color: darkorange;
+}
+
+.front, .back {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+p {
+    font-family: 'McLaren', cursive;
+    color: darkorange;
+    font-size: 16px;
+}
+
+.back-font {
+    color: white;
+}
